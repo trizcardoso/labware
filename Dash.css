@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.btnvoltar {
+    background-color: #A3C5C0;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+.topsection {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.chartcontainer {
+    flex: 1;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    padding: 30px 20px 20px 10px;
+    display: flex;
+    position: relative;
+}
+.chartgridlines div {
+    border-top: 1px solid #E9ECEF;
+    height: 0;
+}
+
+.listcontainer {
+    flex: 1;
+    background-color: #E8F0F0;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.listitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filename {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.açãos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.açãos i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.btnaceitar {
+    background-color: #A3C5C0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.coment {
+    background-color: #E8F0F0;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.coment h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.comentgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.comentbox {
+    height: 100px;
+    border-radius: 4px;
+}
+
+.comentbox.escuro {
+    background-color: #8CAAB0;
+}
+
+.comentbox.claro {
+    background-color: #A3C4C9;
+}
