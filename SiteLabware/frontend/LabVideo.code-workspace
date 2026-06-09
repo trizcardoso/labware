@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../LabVideo/LabVideo"
+		},
+		{
+			"path": "../SiteLabware (1)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SiteLabware (1)"
+	}
+}

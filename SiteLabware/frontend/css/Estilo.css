@@ -1,0 +1,429 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+    padding-top: 90px;
+}
+
+/* HEADER */
+
+.logo{
+    width:140px;
+    height:80px;
+    background-image:url("/frontend/imagens/labware.webp");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:#519189;
+    padding:10px 30px;
+}
+
+.header nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.header nav a{
+    text-decoration:none;
+    color:#ccc;
+    font-size:22px;
+    transition:.3s;
+    font-family:serif;
+}
+
+.header nav a:hover{
+    color:white;
+}
+
+#intra{
+    color:#03183f;
+    font-size:24px;
+}
+.banner {
+    height: 100vh;
+    background: url('/frontend/imagens/image4.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+
+    padding-left:120px;
+}
+
+.textobanner{
+    color:white;
+    font-size:50px;
+    font-family:'Inria Serif';
+    line-height:1.3;
+}
+
+.buttonbanner{
+    margin-top:30px;
+    padding:15px 25px;
+
+    border:none;
+    border-radius:5px;
+
+    background:#FFFCEE;
+    color:#05153F;
+
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buttonbanner a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonbanner:hover{
+    opacity:.9;
+}
+.whats{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    z-index:1000;
+}
+.whats img{
+    width:70px;
+}
+.descricao{
+    background:#daebe8;
+    margin:60px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.desctxt{
+    font-size:24px;
+    line-height:1.6;
+}
+.menu{
+    display:flex;
+    gap:20px;
+    margin:0 60px 60px 60px;
+}
+
+.descjob,
+.descjob2{
+    flex:1;
+    background:#daebe8;
+    border-radius:10px;
+    padding:30px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.imgdesc1,
+.imgdesc2{
+    width:120px;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+/* CURRICULO */
+
+.container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:80px 0;
+}
+
+.container h1{
+    font-family:'Playfair Display', serif;
+    font-size:52px;
+    font-style:italic;
+    margin-bottom:35px;
+    color:#1d2a57;
+}
+
+.formulario{
+    width:70%;
+    max-width:1000px;
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.formulario input,
+.formulario textarea{
+    border:none;
+    outline:none;
+    background:#A5CCC7;
+    border-radius:4px;
+    padding:14px 16px;
+    font-size:15px;
+    color:#333;
+}
+
+.formulario input{
+    height:42px;
+}
+
+.linha-data{
+    width:68%;
+}
+
+.linha-data input{
+    width:100%;
+}
+
+.area-envio{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.area-envio textarea{
+    width:75%;
+    height:95px;
+    resize:none;
+}
+.upload{
+    width:140px;
+    height:95px;
+    background:#A5CCC7;
+    border-radius:4px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.upload:hover{
+    opacity:.9;
+}
+
+.icone{
+    background-image: url("/frontend/imagens/image 5.png");
+    width: 100px;
+    height: 60px;
+    margin-left: 35%;
+    background-repeat: no-repeat;
+    font-size:24px;
+}
+
+.upload p{
+    font-size:14px;
+    color:rgb(0, 0, 0);
+}
+.formulario button{
+    width:190px;
+    height:42px;
+    margin:0 auto;
+
+    border:none;
+    border-radius:4px;
+
+    background:#9aa8b5;
+    color:#000000;
+
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.formulario button:hover{
+    opacity:.85;
+}
+.container_vid{
+    margin-left: 500px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    margin-top: 100px;
+}
+.texto h1{
+    font-size: 55px;
+    font-style: italic;
+    font-weight: bold;
+    color: #0b1a4a;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+/* Área do vídeo */
+.video-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border-color: #000000;
+}
+
+.video-area video{
+    width: 570px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 5px;
+    border-width: 20px;
+    border-color: #000000;
+}
+.TextoLab{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TextoLab a{
+    text-decoration: none;
+    color: #0b1a4a;
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 175px;
+}
+
+/* Área Benefícios */
+.beneficios{
+    font-size: 100px;
+    font-family:'Inria Serif';
+    text-align: center;
+    background:#daebe8;
+    margin:60px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.porto{
+    margin-top: 50px;
+    margin-right: 200px;
+    width:275px;
+    height:100px;
+}
+
+.sul{
+    width:300px;
+    height:100px;
+}
+
+.well{
+    margin-left: 150px;
+    width:325px;
+    height:100px;
+}
+
+
+.secao-valores {
+    background: #daebe8;
+    margin: 60px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.titulo-valores {
+    font-size: 100px;
+    font-family: 'Inria Serif', serif;
+    color: #000;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+.valores-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px; 
+    flex-wrap: wrap; 
+}
+
+.valor-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.valor-item p {
+    font-size: 26px;
+    font-family: Inter, sans-serif;
+    color: #000;    
+    margin-left: 150px;
+}
+
+.comprometimento{
+    margin-left: 150px;
+    width:275px;
+    height:225px;
+}
+
+.joia{
+    margin-left: 150px;
+    width:300px;
+    height:225px;
+}
+
+.tensao{
+    margin-left: 150px;
+    margin-bottom: -65px;
+    width:400px;
+    height:300px;
+}
+
+.btn-curriculo {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-curriculo:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+html {
+    scroll-behavior: smooth;
+}
